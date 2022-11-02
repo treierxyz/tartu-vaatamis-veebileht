@@ -2,10 +2,15 @@ html, body {
     margin: 0;
 }
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #f00;
     padding: 0 20em;
+}
+
+#toc {
+    display: flex;
+    gap: 2em;
 }
