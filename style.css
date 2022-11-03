@@ -13,6 +13,10 @@ header {
     padding: 0 20em;
 }
 
+a {
+    text-decoration: none;
+}
+
 #toc {
     display: flex;
     gap: 3em;

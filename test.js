@@ -6,7 +6,9 @@ class TartuHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header>
-            <h1 id="title">project tartu</h1>
+            <a href="/index.html">
+                <h1 id="title">project tartu</h1>
+            </a>
             <div id="toc">
                 <a href="/index.html">avaleht</a>
                 <a href="test">päeval</a>
