@@ -6,11 +6,11 @@ class TartuHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header>
-            <h1 id="title">tartu vaatamisväärsused</h1>
+            <h1 id="title">project tartu</h1>
             <div id="toc">
-                <a href="test">test</a>
-                <a href="test">test</a>
-                <a href="test">test</a>
+                <a href="/index.html">avaleht</a>
+                <a href="test">päeval</a>
+                <a href="test">õhtul</a>
             </div>
         </header>
         `;
