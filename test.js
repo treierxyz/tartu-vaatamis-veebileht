@@ -11,8 +11,8 @@ class TartuHeader extends HTMLElement {
             </a>
             <div id="toc">
                 <a href="/index.html">avaleht</a>
-                <a href="test">päeval</a>
-                <a href="test">õhtul</a>
+                <a href="#">päeval</a>
+                <a href="#">õhtul</a>
             </div>
         </header>
         `;
