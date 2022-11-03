@@ -1,16 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
 html, body {
     margin: 0;
+    font-family: 'Lexend', sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f00;
+    background: #F94444;
     padding: 0 20em;
 }
 
 #toc {
     display: flex;
-    gap: 2em;
+    gap: 3em;
+}
+
+#toc a {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+}
+
+#title {
+    color: #fff;
 }
