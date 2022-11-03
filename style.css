@@ -9,7 +9,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #F94444;
+    background: #D22630;
     padding: 0 20em;
 }
 
@@ -20,8 +20,15 @@ header {
 
 #toc a {
     color: #fff;
-    text-decoration: none;
-    font-size: large;
+    text-decoration: underline 0.12em #0000;
+    text-underline-offset: 0.4em;
+    font-size: 1.3em;
+    transition: text-decoration 100ms;
+    
+}
+
+#toc a:hover {
+    text-decoration: underline 0.12em #fff;
 }
 
 #title {
