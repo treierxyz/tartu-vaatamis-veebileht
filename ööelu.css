@@ -55,3 +55,11 @@ img {
   height: auto;
 }
 */
+
+body{
+  background-color: black;
+  color: white;
+}
+a{
+  color: white;
+}
