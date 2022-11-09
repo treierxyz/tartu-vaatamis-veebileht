@@ -37,7 +37,9 @@ img{
   margin: 0 0 0 15px;
   vertical-align: middle;
 }
-/*
+
+
+/*https://css-tricks.com/how-do-you-make-a-layout-with-pictures-down-one-side-of-a-page-matched-up-with-paragraphs-on-the-other-side/
 body {
   display: grid;
   padding: 2rem;
