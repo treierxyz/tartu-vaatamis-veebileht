@@ -5,40 +5,6 @@ html, body {
     font-family: 'Lexend', sans-serif;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #D22630;
-    padding: 1.75rem 20em;
-}
-
-header * {
-    margin: 0%;
-}
-
 a {
     text-decoration: none;
-}
-
-#toc {
-    display: flex;
-    gap: 3em;
-}
-
-#toc a {
-    color: #fff;
-    text-decoration: underline 0.12em #0000;
-    text-underline-offset: 0.4em;
-    font-size: 1.3em;
-    transition: text-decoration 100ms;
-    
-}
-
-#toc a:hover {
-    text-decoration: underline 0.12em #fff;
-}
-
-#title {
-    color: #fff;
 }
