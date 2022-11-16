@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+html, body {
+    margin: 0%;
+    font-family: 'Lexend', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}

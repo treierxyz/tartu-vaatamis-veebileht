@@ -1,0 +1,33 @@
+tartu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--vapipunane);
+    padding: 1.75rem 20em;
+}
+
+tartu-header * {
+    margin: 0%;
+}
+
+tartu-header #toc {
+    display: flex;
+    gap: 3em;
+}
+
+tartu-header #toc a {
+    color: var(--valge);
+    text-decoration: underline 0.12em #0000;
+    text-underline-offset: 0.4em;
+    font-size: 1.3em;
+    transition: text-decoration 100ms;
+    
+}
+
+tartu-header #toc a:hover {
+    text-decoration: underline 0.12em var(--valge);
+}
+
+tartu-header #title {
+    color: var(--valge);
+}
