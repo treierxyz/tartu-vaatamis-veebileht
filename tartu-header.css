@@ -1,7 +1,7 @@
 tartu-header {
     display: flex;
     justify-content: space-between;
-    gap: 4em;
+    gap: 6em;
     align-items: center;
     background: var(--vapipunane);
     padding: 1.75rem 15%;
@@ -37,7 +37,7 @@ tartu-header #title {
     display: none;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 850px) {
     .icon {
         display: block;
     }
