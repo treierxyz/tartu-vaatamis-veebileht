@@ -3,8 +3,23 @@
 html, body {
     margin: 0%;
     font-family: 'Lexend', sans-serif;
+    background-color: #E3E9EF;
+    color: #303336;
 }
 
 a {
     text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 5em;
+}
+
+.title {
+    font-size: 4em;
+    font-weight: 400;
+    text-align: center;
 }
