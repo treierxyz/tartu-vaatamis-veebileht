@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 html, body {
-    margin: 0%;
+    margin: 0;
     font-family: 'Lexend', sans-serif;
     background-color: #E3E9EF;
     color: #303336;
@@ -15,11 +15,82 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1em 5em;
+    margin: 1em 20%;
 }
 
 .title {
     font-size: 4em;
     font-weight: 400;
     text-align: center;
+    margin: 1.7em 0;
+}
+
+.two-columns {
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    text-align: justify;
+    margin-bottom: 4em;
+}
+
+.two-columns > * {
+    margin: 0
+}
+
+.two-columns > .image {
+    background-image: url("img/Tartu.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.two-columns p {
+    font-size: x-large;
+}
+
+.valikud p {
+    font-size: 1.75em;
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+.valik {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.valik1 {
+    background-image: url("img/pealeht_1.png");
+}
+
+.valik2 {
+    background-image: url("img/pealeht_2.png");
+}
+
+.valik-tekst {
+    backdrop-filter: blur(6px);
+    transition: backdrop-filter 100ms;
+    height: 100%;
+    width: 100%;
+}
+
+.valik-tekst:hover {
+    backdrop-filter: blur(10px);
+}
+
+.valik h2 {
+    font-size: 3em;
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .two-columns {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
 }
