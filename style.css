@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0%); }
+}
+
+tartu-header {
+    display: none;
+    animation: slideDown 200ms;
+}
+
 html, body {
     margin: 0;
     font-family: 'Lexend', sans-serif;
     background-color: var(--hele);
     color: var(--tume);
+    animation: fadeIn 300ms;
 }
 
 a {
