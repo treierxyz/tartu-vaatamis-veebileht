@@ -1,14 +1,15 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 html, body {
     margin: 0;
     font-family: 'Lexend', sans-serif;
-    background-color: #E3E9EF;
-    color: #303336;
+    background-color: var(--hele);
+    color: var(--tume);
 }
 
 a {
     text-decoration: none;
+    color: var(--vapipunane);
 }
 
 main {
@@ -98,7 +99,7 @@ main {
     flex-direction: column;
     margin-top: 3em;
     gap: 1em;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: var(--helepluss);
     padding: 2em;
 }
 
