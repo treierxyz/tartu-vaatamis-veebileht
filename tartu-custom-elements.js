@@ -19,4 +19,21 @@ class TartuHeader extends HTMLElement {
     }
 }
 
+class TartuFooter extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    async connectedCallback() {
+        let html = await fetch('/tartu-footer.html')
+        var link = document.createElement('link');
+        link.href = "/tartu-footer.css";
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        this.innerHTML = await html.text();
+        this.appendChild(link);
+    }
+}
+
 customElements.define("tartu-header", TartuHeader)
+customElements.define("tartu-footer", TartuFooter)

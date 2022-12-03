@@ -8,36 +8,37 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="colors.css">
     <link rel="shortcut icon" href="img/Tartu_vapp_color.svg" type="image/x-icon">
-    <script src="tartu-header.js"></script>
+    <script src="tartu-custom-elements.js"></script>
 </head>
 <body>
     <tartu-header></tartu-header>
-    <section class="content">
+    <main>
         <h2 class="title">Otsid mida teha Tartus?<br>
             Oled õiges kohas.</h2>
         <section class="two-columns">
             <p>Tere tulemast Tartu meelelahutuse lehele! Sellel haridusliku eesmärgiga loodud lehel saate teada, kus Tartus iga päev ja iga kell pidutseda ning sõprade (või võõrasetega) mõnusalt aega veeta. Kuigi Tartu on oma elanike arvult ja eriti pindalalt väike, on siin küllaga tegevust kui ainult natuke seda otsida! Peaaegu igas linnas on kino ja/või teater, seega sellelt lehelt sarnaseid tavapärasemaid kohti ei leia, vaid näete, mida on tõepoolest ainult Tartus!</p>
-            <div class="image"></div>
+            <div class="image" style="background-image: url('img/Tartu.jpg');"></div>
         </section>
         <section class="valikud">
             <p>Olete Tartust palju kuulnud, aga ikka ei tea, mida siin päriselt teha saab? Olge mureta, sest see leht tutvustab teile Tartu parimaid kohti igal kellajal lõbutsemiseks! Ainult enne kui alustame, öelge palun, kas te otsite pigem head tegevust päevaks või hoopis vägevat ööelu?</p>
             <section class="two-columns">
                 <a href="päev.html">
-                    <div class="valik valik1">
+                    <div class="valik" style="background-image: url('img/pealeht_1.png');">
                         <div class="valik-tekst">
                             <h2>☀️ päev 🎡</h2>
                         </div>
                     </div>
                 </a>
                 <a href="õhtu.html">
-                    <div class="valik valik2">
+                    <div class="valik" style="background-image: url('img/pealeht_2.png');">
                         <div class="valik-tekst">
                             <h2>🌙 õhtu 🍾</h2>
                         </div>
                     </div>
                 </a>
             </section>
-        </section>  
-    </section>
+        </section>
+    </main>
+    <tartu-footer></tartu-footer>
 </body>
 </html>

@@ -7,35 +7,74 @@
     <title>Ööelu Tartus</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="colors.css">
-    <script src="tartu-header.js"></script>
+    <script src="tartu-custom-elements.js"></script>
 </head>
 <body>
     <tartu-header></tartu-header>
-    <div class="sidenav">
-        <a href="#Genn">Genialistide klubi</a>
-        <a href="#Kivi">Kivi baar</a>
-        <a href="#Atso">Atso</a>
-        <a href="#Barlova">Barlova</a>
+    <div class="sticky">
+        <div></div>
+        <section class="sidebar">
+            <a href="#genn">Genialistide klubi</a>
+            <a href="#kivi">Kivi baar</a>
+            <a href="#atso">Atso</a>
+            <a href="#barlova">Barlova</a>
+            <a href="#kaart">Kaart</a>
+        </section>
     </div>
-    <div class="main">
-    <h3 id="Genn">Genialistide klubi</h3>
-    <p>Genialistide Klubi on Tartu subkultuurimaja, eriliste ja avatud inimeste klubi ja kohtumispaik, kus põimuvad teater, muusika, kino ja rõõm. Otse klubi kõrval on Tartu Möku baar, kus muuseas pakutakse legendaarset Sparta shotti!</p>
-    <img src="img/genni_logo.png" alt="Genn" id="genn_pilt">
-    <a href="https://genklubi.ee" target="_blank">Klubi koduleht</a>
-    <h3 id="Kivi">Kivi baar</h3>
-    <p>Üks parimaid baare Tartus vana klaveri, hea muusika ja ägeda meeleoluga. Leti tagant saab soovija hea hinnaga peadpööritava valiku jooke!</p>
-    <img src="img/Kivi_baar.jpg" alt="Kivi baar" id="kivi_pilt">
-    <a href="https://m.facebook.com/baarikivi" target="_blank">Baari Facebook</a> 
-    <h3 id="Atso">Atso</h3>
-    <p>See on see baar, kus kõik teavad, et on parimad joogid, sest baarimees on jumalik ja samuti ka koha omanik. Kui sul tuleb mingi joogisoov pähe, siis härra Atso ise teeb sulle kõik, mida tahta suudad!</p>
-    <img src="img/Atso_logo.png" alt="Atso" id="atso_pilt">
-    <a href="https://www.instagram.com/atsobaar/" target="_blank">Baari Instagram</a>
-    <h3 id="Barlova">Barlova</h3>
-    <p>Barlova on tõepoolest Karlova elanike (ehk sõbralike hipide) jaoks loodud baarist paradiis, kus on meeldiv õhkkond ja kui otsid, siis on seal ka hea seltskond!</p>
-    <img src="img/Barlova.jpg" alt="Barlova" id="barlova_pilt">
-    <a href="https://www.facebook.com/karlovabarlova/" target="_blank">Barlova Facebook</a>
-    <br>
-    <iframe src="https://www.google.com/maps/d/embed?mid=1tZ1J2nwhc6yI1QiysgZd-NKmEpapX28&ehbc=2E312F" width="640" height="480"></iframe>
-    </div>
+    <main>
+        <h2 class="title">🌙 õhtu 🍾</h2>
+        <section class="sidebar-alt">
+            <a href="#genn">Genialistide klubi</a>
+            <a href="#kivi">Kivi baar</a>
+            <a href="#atso">Atso</a>
+            <a href="#barlova">Barlova</a>
+            <a href="#kaart">Kaart</a>
+        </section>
+    <section class="location-card" id="genn">
+        <section class="two-columns">
+            <div class="card-desc">
+                <h2>Genialistide klubi</h2>
+                <p>Genialistide Klubi on Tartu subkultuurimaja, eriliste ja avatud inimeste klubi ja kohtumispaik, kus põimuvad teater, muusika, kino ja rõõm. Otse klubi kõrval on Tartu Möku baar, kus muuseas pakutakse legendaarset Sparta shotti!</p>
+                <a href="https://genklubi.ee" target="_blank">Klubi koduleht</a>
+            </div>
+            <div class="image" style="background-image: url('img/genni_logo.png');"></div>
+        </section>
+    </section>
+    <section class="location-card" id="kivi">
+        <section class="two-columns">
+            <div class="card-desc">
+                <h2>Kivi baar</h2>
+                <p>Üks parimaid baare Tartus vana klaveri, hea muusika ja ägeda meeleoluga. Leti tagant saab soovija hea hinnaga peadpööritava valiku jooke!</p>
+                <a href="https://m.facebook.com/baarikivi" target="_blank">Baari Facebook</a> 
+            </div>
+            <div class="image" style="background-image: url('img/Kivi_baar.jpg');"></div>
+        </section>
+    </section>
+    <section class="location-card" id="atso">
+        <section class="two-columns">
+            <div class="card-desc">
+                <h2>Atso</h2>
+                <p>See on see baar, kus kõik teavad, et on parimad joogid, sest baarimees on jumalik ja samuti ka koha omanik. Kui sul tuleb mingi joogisoov pähe, siis härra Atso ise teeb sulle kõik, mida tahta suudad!</p>
+                <a href="https://www.instagram.com/atsobaar/" target="_blank">Baari Instagram</a>
+            </div>
+            <div class="image" style="background-image: url('img/Atso_logo.png');"></div>
+        </section>
+    </section>
+    <section class="location-card" id="barlova">
+        <section class="two-columns">
+            <div class="card-desc">
+                <h2>Barlova</h2>
+                <p>Barlova on tõepoolest Karlova elanike (ehk sõbralike hipide) jaoks loodud baarist paradiis, kus on meeldiv õhkkond ja kui otsid, siis on seal ka hea seltskond!</p>
+                <a href="https://www.facebook.com/karlovabarlova/" target="_blank">Barlova Facebook</a>
+            </div>
+            <div class="image" style="background-image: url('img/Barlova.jpg');"></div>
+        </section>
+    </section>
+    <h2 class="title" id="kaart">Kaart</h2>
+        <section class="kaart">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1tZ1J2nwhc6yI1QiysgZd-NKmEpapX28&ehbc=2E312F" frameborder="0"></iframe>
+        </section>
+    </main>
+    <tartu-footer></tartu-footer>
 </body>
 </html>

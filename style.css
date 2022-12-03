@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap'); */
 
 html, body {
     margin: 0;
@@ -11,11 +11,11 @@ a {
     text-decoration: none;
 }
 
-.content {
+main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 1em 20%;
+    gap: 2em;
+    margin: 1em 15%;
 }
 
 .title {
@@ -27,25 +27,28 @@ a {
 
 .two-columns {
     display: grid; 
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
     gap: 3em;
     text-align: justify;
     margin-bottom: 4em;
 }
 
 .two-columns > * {
-    margin: 0
+    margin: 0;
 }
 
 .two-columns > .image {
-    background-image: url("img/Tartu.jpg");
     background-position: center;
     background-size: cover;
 }
 
+.card-desc h2 {
+    font-size: 28pt;
+}
+
 .two-columns p {
-    font-size: x-large;
+    font-size: 18pt;
 }
 
 .valikud p {
@@ -63,23 +66,14 @@ a {
     background-size: cover;
 }
 
-.valik1 {
-    background-image: url("img/pealeht_1.png");
-}
-
-.valik2 {
-    background-image: url("img/pealeht_2.png");
-}
-
 .valik-tekst {
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
     transition: backdrop-filter 100ms;
-    height: 100%;
     width: 100%;
 }
 
 .valik-tekst:hover {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
 }
 
 .valik h2 {
@@ -88,9 +82,61 @@ a {
     margin: 2.5em 0;
 }
 
-@media only screen and (max-width: 1000px) {
+.kaart {
+    width: 100%;
+}
+
+.kaart iframe {
+    width: 100%;
+    height: 75vh;
+}
+
+.sidebar {
+    position: absolute;
+    display: none;
+    left: 30px;
+    flex-direction: column;
+    margin-top: 3em;
+    gap: 1em;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 2em;
+}
+
+.sidebar-alt {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.8em;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+.sidebar a, .sidebar-alt a {
+    color: var(--vapipunane);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+@media only screen and (max-width: 1200px) {
     .two-columns {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    main {
+        margin: 1em 20%;
+    }
+    .sidebar {
+        display: flex;
+    }
+
+    .sidebar-alt{
+        display: none;
     }
 }

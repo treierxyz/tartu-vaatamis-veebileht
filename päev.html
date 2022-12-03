@@ -7,40 +7,73 @@
     <title>Päev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="colors.css">
-    <script src="tartu-header.js"></script>
+    <script src="tartu-custom-elements.js"></script>
 </head>
 <body>
     <tartu-header></tartu-header>
-    <h2>Päev</h2>
-
-    <h3>AHHAA</h3>
-        <p> AHHAA teaduskeskus pakkub avastamist nii noortele, kui vanadele.
-            AHHAA Tartu kesklinnas asuvas majas saab vaadata ja ise järgi proovida erinevaid eksponaate,
-            osaleda unikaalses kerakujulises planetaariumis toimuvatel filmiseanssidel, meisterdada töötubades ja vaadata etendusi teadusteatris. </p>
-        <a href="https://ahhaa.ee" target="_blank">AHHAA koduleht</a>
-        <img src="img/ahhaa.png" alt="SIIN VÕIKS OLLA PILT">
-    
-    <h3>Escape Tartu</h3>
-    <p>Otsid põnevust oma päeva, Escape Tartu on sinu jaoks ideaalne koht. Escape Tartu on suurim põgenemistubade pakkuja Lõuna-Eestis.
-        Kõik viis põgenemistuba on erinevad nii kujunduse, kui ka ülessannete poolest.
-
-    </p>
-    <a href="https://www.escapetartu.ee/" target="_blank" rel="noopener noreferrer">Escapetartu koduleht</a>
-    <img src="img/escaperoom.jpg" alt="SIIN VÕIKS OLLA PILT">
-
-
-    <h3>Tartu seikluspark</h3>
-    <p>Tartu Seikluspark asub Tartu kesklinnast 15-minutilise jalutuskäigu kaugusel. Kohale jõudes ootab Sind ees linnulaul ja mõnus looduslikus roheluses park, mis on täis erinevaid tegevusi. 
-        Seikluspargist leiate erinevate raskusastmetega seiklusrajad nii suurtele kui väikestele, pikad trossilaskumised,  ronimisseina ja palju muud põnevat.
-        Need, kes seigelda ei soovi saavad seiklejatele kaasa elada ka kohviku terrassilt, kust on nähtav peaaegu kogu pargi tegevus.</p>
-    <a href="http://www.tartuseikluspark.ee/" target="_blank" rel="noopener noreferrer">Tartu seikluspark koduleht</a>
-    <img src="img/tartuseikluspark.jpg" alt="SIIN VÕIKS OLLA PILT">
-
-    <h3>AURA veekeskus</h3>
-    <p>Aura Keskus pakub parimat sportlikku meelelahutust igas vanuses külastajale. Ujulas, veepargis ja saunakeskuses saab kogu perega mõnusalt aega veeta, puhata ja sportida.
-        Saunakeskuse väliterrassil saab tunda iglusaunade kuuma leili ja lõõgastuda mullivannides. Suvekuudel on avatud ka veepargi päikeseterrass, kus külastajad võivad võtta õhuvanne ja nautida kaunist jõevaadet.</p>
-    <a href="https://www.aurakeskus.ee/" target="_blank" rel="noopener noreferrer">AURA veekeskus koduleht</a>
-    <img src="img/AURA.jpg" alt="SIIN VÕIKS OLLA PILT">
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1E0w7JGBt0XIIqPiIid7Ia8G4qhLuqDY&ehbc=2E312F" width="640" height="480"></iframe>
+    <div class="sticky">
+        <section class="sidebar">
+            <a href="#ahhaa">AHHAA</a>
+            <a href="#escape-tartu">Escape Tartu</a>
+            <a href="#seikluspark">Tartu seikluspark</a>
+            <a href="#aura">AURA veekeskus</a>
+            <a href="#kaart">Kaart</a>
+        </section>
+    </div>
+    <main>
+        <h2 class="title">☀️ päev 🎡</h2>
+        <section class="sidebar-alt">
+            <a href="#ahhaa">AHHAA</a>
+            <a href="#escape-tartu">Escape Tartu</a>
+            <a href="#seikluspark">Tartu seikluspark</a>
+            <a href="#aura">AURA veekeskus</a>
+            <a href="#kaart">Kaart</a>
+        </section>
+        <section class="location-card" id="ahhaa">
+            <section class="two-columns">
+                <div class="card-desc">
+                    <h2>AHHAA</h2>
+                    <p>AHHAA teaduskeskus pakkub avastamist nii noortele, kui vanadele. AHHAA Tartu kesklinnas asuvas majas saab vaadata ja ise järgi proovida erinevaid eksponaate, osaleda unikaalses kerakujulises planetaariumis toimuvatel filmiseanssidel, meisterdada töötubades ja vaadata etendusi teadusteatris.</p>
+                    <a href="https://ahhaa.ee" target="_blank">AHHAA koduleht</a>
+                </div>
+                <div class="image" style="background-image: url('img/ahhaa.png');"></div>
+            </section>
+        </section>
+        <section class="location-card" id="escape-tartu">
+            <section class="two-columns">
+                <div class="card-desc">
+                    <h2>Escape Tartu</h2>
+                    <p>Otsid põnevust oma päeva, Escape Tartu on sinu jaoks ideaalne koht. Escape Tartu on suurim põgenemistubade pakkuja Lõuna-Eestis. Kõik viis põgenemistuba on erinevad nii kujunduse, kui ka ülessannete poolest.</p>
+                    <a href="https://www.escapetartu.ee/" target="_blank" rel="noopener noreferrer">Escapetartu koduleht</a>
+                </div>
+                <div class="image" style="background-image: url('img/escaperoom.jpg');"></div>
+            </section>
+        </section>
+        <section class="location-card" id="seikluspark">
+            <section class="two-columns">
+                <div class="card-desc">
+                    <h2>Tartu seikluspark</h2>
+                    <p>Tartu Seikluspark asub Tartu kesklinnast 15-minutilise jalutuskäigu kaugusel. Kohale jõudes ootab Sind ees linnulaul ja mõnus looduslikus roheluses park, mis on täis erinevaid tegevusi. Seikluspargist leiate erinevate raskusastmetega seiklusrajad nii suurtele kui väikestele, pikad trossilaskumised,  ronimisseina ja palju muud põnevat. Need, kes seigelda ei soovi saavad seiklejatele kaasa elada ka kohviku terrassilt, kust on nähtav peaaegu kogu pargi tegevus.</p>
+                    <a href="http://www.tartuseikluspark.ee/" target="_blank" rel="noopener noreferrer">Tartu seikluspark koduleht</a>
+                </div>
+                <div class="image" style="background-image: url('img/tartuseikluspark.jpg');"></div>
+            </section>
+        </section>
+        <section class="location-card" id="aura">
+            <section class="two-columns">
+                <div class="card-desc">
+                    <h2>AURA veekeskus</h2>
+                    <p>Aura Keskus pakub parimat sportlikku meelelahutust igas vanuses külastajale. Ujulas, veepargis ja saunakeskuses saab kogu perega mõnusalt aega veeta, puhata ja sportida. Saunakeskuse väliterrassil saab tunda iglusaunade kuuma leili ja lõõgastuda mullivannides. Suvekuudel on avatud ka veepargi päikeseterrass, kus külastajad võivad võtta õhuvanne ja nautida kaunist jõevaadet.</p>
+                    <a href="https://www.aurakeskus.ee/" target="_blank" rel="noopener noreferrer">AURA veekeskus koduleht</a>
+                </div>
+                <div class="image" style="background-image: url('img/AURA.jpg');"></div>
+            </section>
+        </section>
+        <h2 class="title" id="kaart">Kaart</h2>
+        <section class="kaart">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1E0w7JGBt0XIIqPiIid7Ia8G4qhLuqDY&ehbc=2E312F" frameborder="0"></iframe>
+        </section>
+    </main>
+    <tartu-footer></tartu-footer>
 </body>
 </html>
