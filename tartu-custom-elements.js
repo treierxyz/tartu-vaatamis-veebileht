@@ -9,9 +9,9 @@ class TartuHeader extends HTMLElement {
     }
 
     async connectedCallback() {
-        let html = await fetch('/tartu-header.html')
+        let html = await fetch('./tartu-header.html')
         var link = document.createElement('link');
-        link.href = "/tartu-header.css";
+        link.href = "./tartu-header.css";
         link.type = "text/css";
         link.rel = "stylesheet";
         this.innerHTML = await html.text();
@@ -25,9 +25,9 @@ class TartuFooter extends HTMLElement {
     }
 
     async connectedCallback() {
-        let html = await fetch('/tartu-footer.html')
+        let html = await fetch('./tartu-footer.html')
         var link = document.createElement('link');
-        link.href = "/tartu-footer.css";
+        link.href = "./tartu-footer.css";
         link.type = "text/css";
         link.rel = "stylesheet";
         this.innerHTML = await html.text();
