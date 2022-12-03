@@ -20,6 +20,8 @@ html, body {
     font-family: 'Lexend', sans-serif;
     background-color: var(--hele);
     color: var(--tume);
+    scroll-behavior: smooth;
+    scroll-padding-top: 2em;
     animation: fadeIn 300ms;
 }
 
