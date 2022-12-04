@@ -53,6 +53,12 @@ svg {
     fill: var(--vapipunane);
 }
 
+hr {
+	border: 0;
+	border-top: 2px solid #ffffff;
+    margin: 8px 0;
+}
+
 @media only screen and (max-width: 1200px) {
     tartu-footer .text {
         margin-bottom: calc(25%/3);
