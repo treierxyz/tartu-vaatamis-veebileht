@@ -119,7 +119,7 @@ main {
     display: none;
     left: 30px;
     flex-direction: column;
-    margin-top: 3em;
+    top: 30px;
     gap: 1em;
     background-color: rgba(255, 255, 255, 0.25);
     padding: 2em;
