@@ -10,47 +10,57 @@ tartu-footer * {
     margin: 0%;
 }
 
-tartu-footer  {
-    display: flex;
-    gap: 3em;
-}
-
 tartu-footer #title, tartu-footer p {
     color: white;
 }
 
 tartu-footer #title {
-    font-size: 26pt;
+    font-size: 3.5vw;
 }
 
 tartu-footer p {
-    font-size: 14pt;
+    font-size: 1.2vw;
 }
 
 
-.text {
+tartu-footer .text {
+    position: absolute;
+    bottom: 0;
+    width: 66%;
+    margin-bottom: 11%;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
     flex-direction: row;
-    gap: 2em;
-    margin-top: -25%;
-    width: 70%;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+}
+
+tartu-footer .rel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 svg {
-    /* padding: 0 20em; */
-    /* width: 100%; */
     fill: var(--vapipunane);
 }
 
 @media only screen and (max-width: 1200px) {
-    .text {
-        margin-top: -40%;
-        flex-direction: column;
-        align-items: center;
+    tartu-footer .text {
+        margin-bottom: calc(25%/3);
+    }
+    tartu-footer #title {
+        font-size: 6.5vw;
+    }
+    
+    tartu-footer p {
+        font-size: 2.5vw;
+    }
+    tartu-footer {
+        padding: 0;
     }
 }
 

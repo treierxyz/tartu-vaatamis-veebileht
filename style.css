@@ -95,7 +95,7 @@ main {
     backdrop-filter: blur(20px);
 }
 
-.valik h2 {
+.valik-tekst h2 {
     font-size: 3em;
     text-align: center;
     margin: 2.5em 0;
@@ -139,6 +139,12 @@ main {
 .sticky {
     position: sticky;
     top: 0;
+}
+
+@media only screen and (max-width: 550px) {
+    .valik-tekst h2 {
+        font-size: 10vw;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
