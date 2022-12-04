@@ -4,6 +4,7 @@ tartu-footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 15%;
+    margin-top: 20px;
 }
 
 tartu-footer * {

@@ -11,26 +11,46 @@ tartu-header * {
     margin: 0%;
 }
 
-tartu-header #toc {
+tartu-header nav {
     display: flex;
     gap: 3em;
 }
 
-tartu-header #toc a {
+tartu-header nav.mobile {
+    display: none;
+}
+
+tartu-header nav a {
     color: white;
     text-decoration: underline 0.12em #0000;
     text-underline-offset: 0.4em;
     font-size: 1.3em;
     transition: text-decoration 100ms;
-    
 }
 
-tartu-header #toc a:hover {
+tartu-header nav a:hover {
     text-decoration: underline 0.12em white;
 }
 
 tartu-header #title {
     color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    tartu-header {
+        gap: 3em;
+    }
+    tartu-header nav {
+        display: none;
+    }
+    tartu-header nav.mobile {
+        display: flex;
+        font-size: 1.5em;
+        gap: 1em;
+    }
+    tartu-header #title {
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (min-width: 1600px) {
