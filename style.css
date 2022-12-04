@@ -10,7 +10,7 @@
     100% { transform: translateY(0%); }
 }
 
-tartu-header .topnav {
+tartu-header {
     display: none;
     animation: slideDown 200ms;
 }
