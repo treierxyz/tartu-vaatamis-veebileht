@@ -87,12 +87,14 @@ main {
 
 .valik-tekst {
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     transition: backdrop-filter 100ms;
     width: 100%;
 }
 
 .valik-tekst:hover {
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .valik-tekst h2 {
