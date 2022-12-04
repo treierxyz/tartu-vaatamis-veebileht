@@ -4,7 +4,7 @@ tartu-footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 15%;
-    margin-top: 20px;
+    margin-top: 32px;
 }
 
 tartu-footer * {
@@ -13,6 +13,10 @@ tartu-footer * {
 
 tartu-footer #title, tartu-footer p {
     color: white;
+}
+
+tartu-footer a {
+    color: rgb(255, 255, 255);
 }
 
 tartu-footer #title {
